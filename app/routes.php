@@ -17,10 +17,10 @@ Route::get('/', function()
         return 'Hello world ;P';
 });
 
-/*Route::get('/search', function()
+Route::get('/search', function()
 {
 	return View::make('search');
-});*/
+});
 
 /*Route::match(array('GET','POST'),'/',function()
 {
