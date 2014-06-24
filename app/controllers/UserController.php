@@ -14,7 +14,11 @@
 class UserController extends BaseController {
     public function showProfile($id) 
     {
-        $user = User::find($id); 
-        return View::make('profile', array('user' => $user));
+        if (Auth::check()) {
+            $user = User::find($id); 
+            return View::make('profile', array('user' => $user));
+        } else {
+            return Redirect::to('login');
+        }
     }
 }
