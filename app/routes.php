@@ -25,10 +25,14 @@ Route::post('login',array('uses' => 'HomeController@doLogin'));
 
 Route::get('logout',array('uses' =>'HomeController@doLogout'));
 
-Route::get('home',function()
+Route::get('home',array('uses' => 'HomeController@index'));
+
+
+/*Route::get('home', function()
 {
     return View::make('home');
-});
+});*/
+
 
 // first and second tests
 /*Route::get('/', function()
@@ -140,15 +144,15 @@ Route::get('user', array('before' => 'auth|old', function()                     
 
 //Route::get('users', 'UserController@getIndex');   // eror getIndex
 
-Route::get('user/{id}', 'UserController@showProfile');
+/*Route::get('user/{id}', 'UserController@showProfile');/*
 
-/*Route::get('users', function()    //za prvi deo , bez baze podataka
+Route::get('users', function()    //za prvi deo , bez baze podataka
 {
 	return View::make('users');
-});*/
+});
 
-/*Route::get('users', function()    //za prvi deo , bez baze podataka
+Route::get('users', function()    //za prvi deo , bez baze podataka
 {
         $users = User::all();
 	return View::make('users')->with('users',$users);
-}); */
+});*/ 

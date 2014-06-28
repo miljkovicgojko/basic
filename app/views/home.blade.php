@@ -1,17 +1,6 @@
-<html>
-    <head> 
-        <title> HOME </title> 
-    </head>
+@section('content')
 
-    <body>
-
-        <h1>Home</h1>
-
-        <a href="{{ URL::to('logout') }}">Logout</a>
-
-    </body>
+<h1>Home</h1>
 
 
-</html>
-
-
+@stop

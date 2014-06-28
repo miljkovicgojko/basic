@@ -1,0 +1,58 @@
+header {
+    background: #86D2B6;
+    display: inline-block;
+    width: 100%;
+    height: 130px;
+}
+header h1{
+    font-size: 40px;
+    text-align: center;
+}
+header div.logout{
+    position: relative;
+    display: inline-block;
+    left: 95%;
+}
+header .logout{
+    display: inline-block;
+}
+
+body{
+    background: #ddd;
+    margin: 0px;
+    
+}
+
+footer{
+    background-color: #BEE9EA;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.loginClass{
+    color: red;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+.parag{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.pHeader{
+    font-size: 15px;
+    margin-left: 0px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.img{                    //doraditi
+    margin-left: 5px;
+    margin-top: -30px;
+    display: inline-block;
+    position: relative;
+}

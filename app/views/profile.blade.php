@@ -1,7 +1,5 @@
-
-@extends('layout')
 @section('content')
-{{{ $user->email}}}
+    {{{ $user->email}}}
 @stop
 
 

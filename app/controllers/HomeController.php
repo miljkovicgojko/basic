@@ -14,11 +14,17 @@ class HomeController extends BaseController {
       |
      */
 
+    public function index() {
+        $this->layout->content = View::make('home');
+        
+    }
+    
     public function showLogin() {
         return View::make('login');
     }
 
     public function doLogin() {
+        
         $rules = array(
             'email' => 'required|email',
             'password' => 'required|alphaNum|min:3'

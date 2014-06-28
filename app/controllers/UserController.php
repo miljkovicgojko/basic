@@ -12,13 +12,14 @@
  * @author stevan
  */
 class UserController extends BaseController {
-    public function showProfile($id) 
-    {
+
+    public function showProfile($id) {
         if (Auth::check()) {
-            $user = User::find($id); 
-            return View::make('profile', array('user' => $user));
+            $user = User::find($id);
+            $this->layout->content = View::make('profile', array('user' => $user));
         } else {
             return Redirect::to('login');
         }
     }
+
 }
