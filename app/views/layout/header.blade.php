@@ -2,13 +2,19 @@
 
     <div>
         <h1>Basic knowledge course</h1>
-        <img class="img" src="{{ secure_asset('images/logo6.gif') }}" />
-  
     </div>
-    @if(Auth::check())
+   <div class="image">
+      <!--  {{HTML::image('images/logo6.gif','alt-text')}}  -->
+     <img id="myImage" onclick="changeImage()" src="images/logo5.gif">
+   </div>
+    
+    <div>
+     @include('layout.navbar')
+    </div>
+    
+     @if(Auth::check())
     <div class="logout">
         <a href="{{ URL::to('logout') }}">Logout</a><br>
-        
     </div>
     <p class="pHeader">Ulogovan je korisnik:</p>
     <p2 class ="pHeader">"{{ Auth::user()->first_name," ",Auth::user()->last_name }}"</p2>

@@ -1,13 +1,16 @@
 
 
 <!doctype html>
+<!--
 <html>
     <head>
         {{ HTML::style('css/style.css'); }}
         <title>Look at me Login</title>
-    </head>
+   </head>
     <body>
          @include('layout.header')
+ -->        
+@section('content')
         {{ Form::open() }}
         <h1 class="loginClass">Login</h1>
 
@@ -28,11 +31,13 @@
         </p>
 
         <p class="parag">{{ Form::submit('Submit!') }}</p>
-        {{ Form::close() }}
+        {{ Form::close() }}  
 
-         @include('layout.footer')
+       <!--        @include('layout.footer')
     </body>
 {{ HTML::script('http://code.jquery.com/jquery-1.11.0.min.js'); }}
-    {{ HTML::script('js/main.js'); }}
+{{ HTML::script('js/main.js'); }}
 
 </html>
+-->
+@stop

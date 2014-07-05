@@ -13,14 +13,15 @@ class HomeController extends BaseController {
       |	Route::get('/', 'HomeController@showWelcome');
       |
      */
-
+        
     public function index() {
         $this->layout->content = View::make('home');
         
     }
     
     public function showLogin() {
-        return View::make('login');
+        //return View::make('login');
+        $this->layout->content = View::make('login');
     }
 
     public function doLogin() {
@@ -68,5 +69,5 @@ class HomeController extends BaseController {
         Auth::logout();
         return Redirect::to('login');
     }
-
+    
 }
