@@ -70,4 +70,8 @@ class HomeController extends BaseController {
         return Redirect::to('login');
     }
     
+    public function showRegistration()
+    {
+        $this->layout->content = View::make('registration');
+    }
 }

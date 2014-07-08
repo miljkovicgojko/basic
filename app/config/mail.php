@@ -29,7 +29,7 @@ return array(
 	*/
 
 	'host' => 'smtp.mailgun.org',
-
+        
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Host Port
@@ -55,7 +55,7 @@ return array(
 	*/
 
 	'from' => array('address' => null, 'name' => null),
-
+         
 	/*
 	|--------------------------------------------------------------------------
 	| E-Mail Encryption Protocol
@@ -81,7 +81,7 @@ return array(
 	*/
 
 	'username' => null,
-
+       
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Server Password
@@ -94,7 +94,7 @@ return array(
 	*/
 
 	'password' => null,
-
+        
 	/*
 	|--------------------------------------------------------------------------
 	| Sendmail System Path

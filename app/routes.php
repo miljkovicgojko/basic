@@ -27,8 +27,15 @@ Route::get('logout',array('uses' =>'HomeController@doLogout'));
 
 Route::get('home',array('uses' => 'HomeController@index'));
 
+//Route::get('register',array('uses' => 'HomeController@showRegistration'));
 
-/*Route::get('home', function()
+Route::get('signup',function()
+{
+    return View::make('user.signup')->with('title', 'Signup');
+});
+Route::post('signup','UserController@signup');
+
+/*Route::get('home', function() * 
 {
     return View::make('home');
 });*/
